@@ -8,6 +8,7 @@ Generator and discriminator (both are neural networks)
 - GAN application; see some not- -existent people who generate by GAN!!!
 <img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/GAN1.png" alt="drawing" style="width:100px;"/>
 <img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/GAN2.png" alt="drawing" style="width:100px;"/>
+You can try it yourself using this link: https://www.thispersondoesnotexist.com/
  -  Intuition Behind GANs
  - Quick look at the generator and the discriminator in GANs
    **The Discriminator** is a classifier that learns the probability of class Y(real or fake)given feature X (conditional prob.)and these probabilities  are the feedback for the generator 

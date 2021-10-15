@@ -24,7 +24,7 @@ You can try it yourself using this link: https://www.thispersondoesnotexist.com/
  
  With feedback from the discriminator on whether a fake image looks real or fake, **the generator** starts producing fake images that are more and more realistic (that tries to fool the discriminator). Images that look “fake” to the discriminator are discarded in favor of those that look “real” to the discriminator; since the discriminator is improving over time as it sees more reals and fakes, the generator needs to continually learn too.
 
-
+- Finally, a quick look to Pytorch
 
 
 ## Week 2

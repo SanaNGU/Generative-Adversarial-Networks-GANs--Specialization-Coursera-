@@ -1,20 +1,21 @@
 # Course 1 :Build Basic Generative Adversarial Networks (GANs)
 ## Week 1
 #### In the first week of the first course you will be Learn :
-- What us GAN
-- --
-- --
-- --
+- What is GAN and where we can use it?
+ GANs allow you to build models that can generate realistic images or music and other things,GANs comprises of two models thatcompete with each other and reach a point where realistic examples are produced by the generator.
+- What are the two models behind GANs?
+Generator and discriminator (both are neural networks)
+- GAN application; see some not- -existent people who generate by GAN!!!
+ - --
 ## Week 2
 #### In the Second week of the first course you will be Learn :
-- ---
+- Deep Convolutional GANs
 - ---
 - ---
 ## Week 3
 #### In the Third week of the first course you will be Learn :
-- --
-- 
+- Wasserstein GANs with Gradient Penalty
 - 
 ## Week 4
 #### In the last week of the first course you will be Learn :
-- ---
+- Conditional GAN & Controllable Generation

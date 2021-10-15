@@ -12,15 +12,18 @@ Generator and discriminator (both are neural networks)
  - Quick look at the generator and the discriminator in GANs
    **The Discriminator** is a classifier that learns the probability of class Y(real or fake)given feature X (conditional prob.)and these probabilities  are the feedback for the generator 
    **The Generator** is the heart in GANs,the generator the  produces fake data that tries to look real, it learns to mimic that distribution of features  X from the class od your data and in order to produce different outputs each time it takes random features as input
+
 ## Week 2
 #### In the Second week of the first course you will be Learn :
 - Deep Convolutional GANs
 - ---
 - ---
+
 ## Week 3
 #### In the Third week of the first course you will be Learn :
 - Wasserstein GANs with Gradient Penalty
 - 
+
 ## Week 4
 #### In the last week of the first course you will be Learn :
 - Conditional GAN & Controllable Generation

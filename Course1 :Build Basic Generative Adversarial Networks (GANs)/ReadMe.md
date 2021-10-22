@@ -49,11 +49,11 @@ here is the generated output shoud be after the training:
   - Very useful to learn unsupervised image representations(Using the features learnt by generator for classification tasks. Performs better than all k-means extracted features)
   - visualize the filters learnt by GANs (Disc. part) using guiged BP 
   - Implement nice vector arithmetic  properties 
- */
+ 
  
  ### then we come to the CNN architectur they used:
  
- /*:
+ 
   - All the pooling layers are replaced with strided convolutions in the discriminator and fractional strided convolutions in the generator (allowing the network to learn its own downsampling )
   - No fully-connected on. the top of the Conv featue and replace it with global average pooling (remove fully connecting hidden layers) (eliminating all fully connected layers on top of convolutional features. Even for the last layer, the convolution layer is flattened and fed into a single sigmoid output.)
   - Batchnorm used in both Generator and Discriminator

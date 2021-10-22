@@ -81,7 +81,7 @@ here is the generated output shoud be after the training:
 
 <img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/GAN7.png" alt="drawing" style="width:400px;hight=300"/>
 
-you can see how DCGAN is generating more  
+you can see how DCGAN is generating more 'real' looking images than GANs with the fully connected network
 
 ## Week 3
 #### In the Third week of the first course you will be Learn :

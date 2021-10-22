@@ -41,7 +41,7 @@ here is the generated output shoud be after the training:
 - Deep Convolutional GANs:A DCGAN is a direct extension of the GAN, except that it explicitly uses convolutional and convolutional-transpose layers in the discriminator and generator, respectively.
 - ---
 - ---
--As an optional reading suggestion by the course, the paper behind the deep convolutional GAN (DCGAN) was a nice thing to explore
+#### -As an optional reading suggestion by the course, the paper behind the deep convolutional GAN (DCGAN) was a nice thing to explore
 'Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks (Radford, Metz, and Chintala, 2016)',I summarised the important points from that paper  here:
 /*:
   - Gap:Gan have been known to be unstable to train, hard to understand what GANs learn  
@@ -50,7 +50,9 @@ here is the generated output shoud be after the training:
   - visualize the filters learnt by GANs (Disc. part) using guiged BP 
   - Implement nice vector arithmetic  properties 
  */
- then we come to the CNN architectur they used:
+ 
+ ### then we come to the CNN architectur they used:
+ 
  /*:
   - All the pooling layers are replaced with strided convolutions in the discriminator and fractional strided convolutions in the generator (allowing the network to learn its own downsampling )
   - No fully-connected on. the top of the Conv featue and replace it with global average pooling (remove fully connecting hidden layers) (eliminating all fully connected layers on top of convolutional features. Even for the last layer, the convolution layer is flattened and fed into a single sigmoid output.)
@@ -60,12 +62,15 @@ here is the generated output shoud be after the training:
   - Hyperparameterw: Minibatch SGD with minibatch size of 128, Weights initialized with 0 centered Normal distribution with standard deviation = 0.02, Adam Optimizer, Slope of leak = 0.2 for LeakyReLU., Learning rate = 0.0002, β1(momentum term ) = 0.5
  */
 
-The discriminator is made up of strided convolution layers, batch norm layers, and LeakyReLU activations. The input is a 3x64x64 input image and the output is a scalar probability that the input is from the real data distribution. 
+The discriminator architecture is same as that of a normal image classification model.is made up of Convolution layers, Activation layer and BatchNormalisation(In the DCGAN paper, strides are used instead of pooling to reduce the size of a kernel. Also, there is no Fully Connected layer in the network. Leaky ReLU with leak slope 0.2 is used.) The input is a 3x64x64 input image and the output is a scalar probability that the input is from the real data distribution. 
+
 
 The generator is comprised of convolutional-transpose layers, batch norm layers, and activation layer(If the layer is not the last layer then ReLu activation is applied else Tanh).
 The input is a latent vector, zz, that is drawn from a standard normal distribution. First channel size is 1024 which is then decreased block by block to 3 for RGB image. Finally, we will get a 3x64x64 Tensor which will be our image. The strided conv-transpose layers allow the latent vector to be transformed into a volume with the same shape as an image. In the paper, the authors also give some tips about how to setup the optimizers, how to calculate the loss functions, and how to initialize the model weight.
 <img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/DCGAN.png" alt="drawing" style="width:600px;hight=400"/>
 
+
+The Discriminator wants to predict the fake images as fake and real images as real. On the other hand, the Generator wants to fool Discriminator into predicting the fake images produced by the Generator as real.
 
 
 ## Week 3

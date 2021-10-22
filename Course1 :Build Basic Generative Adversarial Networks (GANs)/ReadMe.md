@@ -51,7 +51,7 @@ here is the generated output shoud be after the training:
   - Implement nice vector arithmetic  properties 
  
  
- ### then we come to the CNN architectur they used:
+ ### Then we come to the architectur that the paper has used:
  
  
   - All the pooling layers are replaced with strided convolutions in the discriminator and fractional strided convolutions in the generator (allowing the network to learn its own downsampling )

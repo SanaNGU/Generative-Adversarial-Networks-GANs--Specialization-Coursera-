@@ -38,9 +38,35 @@ here is the generated output shoud be after the training:
 
 ## Week 2
 #### In the Second week of the first course you will be Learn :
-- Deep Convolutional GANs
+- Deep Convolutional GANs:A DCGAN is a direct extension of the GAN, except that it explicitly uses convolutional and convolutional-transpose layers in the discriminator and generator, respectively.
 - ---
 - ---
+-As an optional reading suggestion by the course, the paper behind the deep convolutional GAN (DCGAN) was a nice thing to explore
+'Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks (Radford, Metz, and Chintala, 2016)',I summarised the important points from that paper  here:
+/*:
+  - Gap:Gan have been known to be unstable to train, hard to understand what GANs learn  
+  - paper contribution: propose an arch. topology convolution GAN that make more stable to train GANs
+  - Very useful to learn unsupervised image representations(Using the features learnt by generator for classification tasks. Performs better than all k-means extracted features)
+  - visualize the filters learnt by GANs (Disc. part) using guiged BP 
+  - Implement nice vector arithmetic  properties 
+ */
+ then we come to the CNN architectur they used:
+ /*:
+  - All the pooling layers are replaced with strided convolutions in the discriminator and fractional strided convolutions in the generator (allowing the network to learn its own downsampling )
+  - No fully-connected on. the top of the Conv featue and replace it with global average pooling (remove fully connecting hidden layers) (eliminating all fully connected layers on top of convolutional features. Even for the last layer, the convolution layer is flattened and fed into a single sigmoid output.)
+  - Batchnorm used in both Generator and Discriminator
+  - ReLu activation is used for the generator for all the layers except the last layer which uses tanh
+  - Discriminator uses LeakyReLu for all the layers.  
+  - Hyperparameterw: Minibatch SGD with minibatch size of 128, Weights initialized with 0 centered Normal distribution with standard deviation = 0.02, Adam Optimizer, Slope of leak = 0.2 for LeakyReLU., Learning rate = 0.0002, β1(momentum term ) = 0.5
+ */
+
+The discriminator is made up of strided convolution layers, batch norm layers, and LeakyReLU activations. The input is a 3x64x64 input image and the output is a scalar probability that the input is from the real data distribution. 
+
+The generator is comprised of convolutional-transpose layers, batch norm layers, and activation layer(If the layer is not the last layer then ReLu activation is applied else Tanh).
+The input is a latent vector, zz, that is drawn from a standard normal distribution. First channel size is 1024 which is then decreased block by block to 3 for RGB image. Finally, we will get a 3x64x64 Tensor which will be our image. The strided conv-transpose layers allow the latent vector to be transformed into a volume with the same shape as an image. In the paper, the authors also give some tips about how to setup the optimizers, how to calculate the loss functions, and how to initialize the model weight.
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/DCGAN.png" alt="drawing" style="width:400px;hight=300"/>
+
+
 
 ## Week 3
 #### In the Third week of the first course you will be Learn :

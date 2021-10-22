@@ -71,7 +71,17 @@ The input is a latent vector, zz, that is drawn from a standard normal distribut
 
 
 The Discriminator wants to predict the fake images as fake and real images as real. On the other hand, the Generator wants to fool Discriminator into predicting the fake images produced by the Generator as real.
+###Then Finally, the practial task for week 2 is filling missing code lines while building and training a CGGAN that can generate hand-written images of digits (0-9),
+here is the generated output shoud be looked like in the first run: 
 
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/GAN6.png" alt="drawing" style="width:400px;hight=300"/>
+
+
+here is the generated output shoud be after the training: 
+
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/GAN7.png" alt="drawing" style="width:400px;hight=300"/>
+
+you can see how DCGAN is generating more  
 
 ## Week 3
 #### In the Third week of the first course you will be Learn :

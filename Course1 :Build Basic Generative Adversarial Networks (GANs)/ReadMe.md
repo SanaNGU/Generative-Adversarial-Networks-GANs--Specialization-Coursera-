@@ -64,7 +64,7 @@ The discriminator is made up of strided convolution layers, batch norm layers, a
 
 The generator is comprised of convolutional-transpose layers, batch norm layers, and activation layer(If the layer is not the last layer then ReLu activation is applied else Tanh).
 The input is a latent vector, zz, that is drawn from a standard normal distribution. First channel size is 1024 which is then decreased block by block to 3 for RGB image. Finally, we will get a 3x64x64 Tensor which will be our image. The strided conv-transpose layers allow the latent vector to be transformed into a volume with the same shape as an image. In the paper, the authors also give some tips about how to setup the optimizers, how to calculate the loss functions, and how to initialize the model weight.
-<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/DCGAN.png" alt="drawing" style="width:400px;hight=300"/>
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/DCGAN.png" alt="drawing" style="width:600px;hight=400"/>
 
 
 

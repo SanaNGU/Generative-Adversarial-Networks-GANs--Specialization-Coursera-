@@ -99,7 +99,8 @@ here is the generated output shoud be looked like in the first run:
 
 here is the generated output shoud be after the training: 
 
-<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/after training.png" alt="drawing" style="width:400px;hight=300"/>
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/after training.png" alt="drawing" style="width:400px;hight=300"/>. <img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/loss after training.png" alt="drawing" style="width:400px;hight=300"/>
+
 
 you can see how DCGAN is generating more 'real' looking images than GANs with the fully connected network
 ## Week 4

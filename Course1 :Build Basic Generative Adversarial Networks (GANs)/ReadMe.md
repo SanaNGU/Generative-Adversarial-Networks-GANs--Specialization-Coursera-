@@ -106,3 +106,25 @@ you can see how DCGAN is generating more 'real' looking images than GANs with th
 ## Week 4
 #### In the last week of the first course you will be Learn :
 - Conditional GAN & Controllable Generation
+
+
+### Then Finally, the practial task for week 4 is filling missing code lines while building and training a conditional GAN in order to generate hand-written images of digits, conditioned on the digit to be generated (the class vector). This will let us choose what digit we want to generate. 
+The learning outcomes from this assignment is : 
+
+- to Learn the technical difference between a conditional and unconditional GAN.
+- 
+- Understand the distinction between the class and noise vector in a conditional GAN.
+
+ 
+
+here is the generated output shoud be looked like in the first run: 
+
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/before training.png" alt="drawing" style="width:400px;hight=300"/>. 
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/loss before training.png" alt="drawing" style="width:400px;hight=300"/>
+
+
+here is the generated output shoud be after the training: 
+
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/after training.png" alt="drawing" style="width:400px;hight=300"/>. <img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/loss after training.png" alt="drawing" style="width:400px;hight=300"/>
+
+

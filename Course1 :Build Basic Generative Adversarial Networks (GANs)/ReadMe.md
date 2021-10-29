@@ -119,12 +119,11 @@ The learning outcomes from this assignment is :
 
 here is the generated output shoud be looked like in the first run: 
 
-<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/before training.png" alt="drawing" style="width:400px;hight=300"/>. 
-<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/loss before training.png" alt="drawing" style="width:400px;hight=300"/>
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/CGAN2.png" alt="drawing" style="width:400px;hight=300"/>. 
 
 
 here is the generated output shoud be after the training: 
 
-<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/after training.png" alt="drawing" style="width:400px;hight=300"/>. <img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/loss after training.png" alt="drawing" style="width:400px;hight=300"/>
+<img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/after training.png" alt="drawing" style="width:400px;hight=300"/>. <img src="https://github.com/SanaNGU/Generative-Adversarial-Networks-GANs--Specialization-Coursera-/blob/main/Course1%20:Build%20Basic%20Generative%20Adversarial%20Networks%20(GANs)/images/CGAN1.png" alt="drawing" style="width:400px;hight=300"/>
 
 
